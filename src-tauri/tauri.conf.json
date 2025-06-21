@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "identifier": "com.example.lmetrade",
   "build": {
-    "frontendDist": "../",
+    "frontendDist": "../dist",
     "beforeDevCommand": "",
-    "beforeBuildCommand": ""
+    "beforeBuildCommand": "npm run build"
   },
   "app": {
     "windows": [

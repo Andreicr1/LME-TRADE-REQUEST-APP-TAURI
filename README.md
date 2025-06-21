@@ -64,6 +64,9 @@ npm install
 npm run tauri:build
 ```
 
+This script runs `vite build` to output the web assets under `dist/` before
+packaging the application with Tauri.
+
 The resulting binary will appear under `src-tauri/target/release/bundle/` for your platform.
 
 ## Service worker
