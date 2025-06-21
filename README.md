@@ -53,7 +53,18 @@ Order types include **At Market**, **Limit**, **Range** and **Resting**. Choosin
 
 ## Building
 
-No build step is required. The repository only contains static files (`index.html`, `main.js`, `manifest.json` and `service-worker.js`). If you modify the code you simply refresh the browser to see the changes.
+No build step is required for the web version. The repository only contains static files (`index.html`, `main.js`, `manifest.json` and `service-worker.js`). If you modify the code you simply refresh the browser to see the changes.
+
+### Creating a desktop executable
+
+The repository also provides a minimal [Tauri](https://tauri.app) configuration. After installing the dependencies you can build a desktop executable with:
+
+```bash
+npm install
+npm run tauri:build
+```
+
+The resulting binary will appear under `src-tauri/target/release/bundle/` for your platform.
 
 ## Service worker
 
