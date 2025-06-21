@@ -4,16 +4,16 @@
   "version": "0.1.0",
   "identifier": "com.example.lmetrade",
   "build": {
-    "frontendDist": "../",
+    "frontendDist": "../dist",
     "beforeDevCommand": "",
-    "beforeBuildCommand": ""
+    "beforeBuildCommand": "npm run build"
   },
   "app": {
     "windows": [
       {
         "title": "lme-trade-request",
-        "width": 800,
-        "height": 600,
+        "width": 1040,
+        "height": 1240,
         "resizable": true,
         "fullscreen": false
       }
@@ -21,9 +21,16 @@
     "security": {
       "csp": null
     }
-  },
+   },
   "bundle": {
     "active": true,
-    "targets": "all"
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
   }
 }
